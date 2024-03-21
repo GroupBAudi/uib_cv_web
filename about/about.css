@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --rightw: 20vw;
+    --righth: 60vh;
+
+}
+
+body {
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: aqua;
+    flex: 2;
+}
+
+.img-placeholder {
+    background-color: red;
+    width: var(--rightw);
+    height: var(--rightw);
+}
+
+.skill-set {
+    background-color: blueviolet;
+    width: var(--rightw);
+    height: var(--righth);
+}
