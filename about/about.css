@@ -55,15 +55,26 @@ body {
     display: flex;
     align-items: center;    
     flex-flow: column wrap;
+    padding: var(--section-padding);
+    gap: 0.5rem;
 }
 
-.left .list {
-    list-style-type: "-     ";
+.left .header {
     padding-top: 1rem;
 }
 
+.left .list {
+    list-style-type: disc;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    background-color: red;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.25rem;
+}
+
 .right .list {
-    list-style-type: "-  ";
+    list-style-type: decimal;
     padding-left: 1rem;
 }
 
