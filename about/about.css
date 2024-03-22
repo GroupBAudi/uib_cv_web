@@ -9,44 +9,62 @@
 
 :root {
     --rightw: 20vw;
-    --righth: 60vh;
+    --section-padding: 0 1.5rem;
 }
 
-body {
-    background-color: cornflowerblue;
+body {  
     display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-evenly;
+    background-color: darkgreen;
 }
 
 .left {
     display: flex;
     flex-flow: column nowrap;
+    background-color: crimson;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.left > div {
+    width: 20vw;
 }
 
 .right {
     display: flex;
     flex-flow: column nowrap;
-    background-color: aqua;
-    flex: 2;
+    background-color: aqua; 
+    justify-content: space-around;
+    padding: 0 1rem;  
+}
+
+.right > div  {
+    width: 70vw;
 }
 
 .img-placeholder {
-    background-color: red;
-    width: var(--rightw);
-    height: var(--rightw);
+    background-color: aquamarine;
+    height: 16vw;
 }
 
 .skill-set {
     background-color: blueviolet;
-    width: var(--rightw);
-    height: var(--righth);
+    height: 60vh;
     display: flex;
-    justify-content: center;
+    align-items: center;    
+    flex-flow: column wrap;
 }
 
-.list {
-    list-style-type: decimal-leading-zero;
-    text-align: center;
+.left .list {
+    list-style-type: "-     ";
     padding-top: 1rem;
+}
+
+.right .list {
+    list-style-type: "-  ";
+    padding-left: 1rem;
 }
 
 .header {
@@ -54,4 +72,34 @@ body {
     font-size: 2em;
 }
 
+.text-light {
+    font-weight: 300;
+}
 
+.profile-section {
+    background-color: chocolate;  
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    padding: var(--section-padding)
+}
+
+.educations-section {
+    background-color: burlywood;
+    padding: var(--section-padding)
+}
+
+.experiences-section {
+    background-color: chartreuse;
+    padding: var(--section-padding)
+}
+
+
+.return-button {
+    width: 7vw;
+    height: 5vh;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: normal;
+    align-self: flex-end;
+}
