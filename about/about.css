@@ -32,14 +32,17 @@ body {
     gap: 3rem;
     justify-content: space-evenly;
     background-color: darkgreen;
+    height: 100vh;
+    align-items: center;
+    padding: 0.5rem;
 }
 
 .left {
     display: flex;
     flex-flow: column nowrap;
-    background-color: crimson;
-    justify-content: space-around;
-    gap: 2rem;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap: 1rem;
 }
 
 .left > div {
@@ -49,31 +52,16 @@ body {
 .right {
     display: flex;
     flex-flow: column nowrap;
-    background-color: aqua; 
-    justify-content: space-around;
-    padding: 0 1rem;  
-    align-content: center;
+    justify-content: space-evenly;  
+    height: 100vh;
 }
 
-
-
-.img-placeholder {
-    background-color: aquamarine;
-    height: 14vw;
-}
-
-.skill-set {
-    background-color: blueviolet;
-    height: 60vh;
+.right > div  {
+    width: 70vw;
+    height: 25vh;
+    padding: 0.4rem;
     display: flex;
-    align-items: center;    
-    flex-flow: column wrap;
-    padding: var(--section-padding);
-    gap: 0.5rem;
-}
-
-.left .header {
-    padding-top: 1rem;
+    flex-flow: column nowrap;
 }
 
 .left .list {
@@ -91,6 +79,22 @@ body {
     padding-left: 1rem;
 }
 
+.img-placeholder {
+    background-color: aquamarine;
+    height: 25vh;
+}
+
+.skill-set {
+    background-color: blueviolet;
+    height: 60vh;
+    display: flex;
+    align-items: center;    
+    flex-flow: column wrap;
+    padding: var(--section-padding);
+    gap: 0.5rem;
+}
+
+
 .header {
     font-weight: bolder;
     font-size: 2em;
@@ -101,15 +105,6 @@ body {
     font-weight: 300;
 }
 
-.right > div  {
-    width: 70vw;
-    height: 25vh;
-    padding: 0.4rem;
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 0.5rem;
-}
-
 .scroll {
     height: 30vh;
     background-color: blueviolet;
@@ -118,8 +113,8 @@ body {
 }
 
 .profile-section {
-    background-color: chocolate;  
-    padding: var(--section-padding)
+    padding: var(--section-padding);
+    background-color: blue
 }
 
 .educations-section {
@@ -133,10 +128,8 @@ body {
 }
 
 .return-button {
-    width: 7vw;
     height: 5vh;
     border-radius: 10px;
     font-size: 15px;
     font-weight: normal;
-    align-self: flex-end;
 }
