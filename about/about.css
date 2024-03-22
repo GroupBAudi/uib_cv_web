@@ -12,6 +12,20 @@
     --section-padding: 0 1.5rem;
 }
 
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
 body {  
     display: flex;
     flex-direction: row;
@@ -38,15 +52,14 @@ body {
     background-color: aqua; 
     justify-content: space-around;
     padding: 0 1rem;  
+    align-content: center;
 }
 
-.right > div  {
-    width: 70vw;
-}
+
 
 .img-placeholder {
     background-color: aquamarine;
-    height: 16vw;
+    height: 14vw;
 }
 
 .skill-set {
@@ -81,17 +94,31 @@ body {
 .header {
     font-weight: bolder;
     font-size: 2em;
+    background-color: red;
 }
 
 .text-light {
     font-weight: 300;
 }
 
-.profile-section {
-    background-color: chocolate;  
+.right > div  {
+    width: 70vw;
+    height: 25vh;
+    padding: 0.4rem;
     display: flex;
     flex-flow: column nowrap;
-    gap: 1rem;
+    gap: 0.5rem;
+}
+
+.scroll {
+    height: 30vh;
+    background-color: blueviolet;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.profile-section {
+    background-color: chocolate;  
     padding: var(--section-padding)
 }
 
@@ -104,7 +131,6 @@ body {
     background-color: chartreuse;
     padding: var(--section-padding)
 }
-
 
 .return-button {
     width: 7vw;
