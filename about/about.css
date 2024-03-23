@@ -152,7 +152,7 @@ body {
     height: 30vh;
     overflow: auto;
     overflow-x: hidden;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem; 
 }
 
 .return-button {
@@ -164,7 +164,7 @@ body {
     position: relative;
     background-color: var(--gray-bg-tp) ;
     left: 61.2vw;  
-    bottom: 17%; /* i gave up positoning button */
+    bottom: 20%; /* i gave up positoning button */
     transition: 0.3s;
 }
 
