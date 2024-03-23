@@ -1,14 +1,47 @@
+@import url(https://db.onlinewebfonts.com/c/78402929f01142abbaa927e35ec7b74b?family=Revolution+Gothic+W03+Light);
+@font-face {
+    font-family: "Revolution Gothic W03 Light";
+    src: url("https://db.onlinewebfonts.com/t/78402929f01142abbaa927e35ec7b74b.eot");
+    src: url("https://db.onlinewebfonts.com/t/78402929f01142abbaa927e35ec7b74b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/78402929f01142abbaa927e35ec7b74b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/78402929f01142abbaa927e35ec7b74b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/78402929f01142abbaa927e35ec7b74b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/78402929f01142abbaa927e35ec7b74b.svg#Revolution Gothic W03 Light")format("svg");
+}
+/* above is revolution gothic light font */
+
+@import url(https://db.onlinewebfonts.com/c/7d721bf37dadb8ade50e3212e312c580?family=Revolution+Gothic+W03+Bold);
+@font-face {
+    font-family: "Revolution Gothic W03 Bold";
+    src: url("https://db.onlinewebfonts.com/t/7d721bf37dadb8ade50e3212e312c580.eot");
+    src: url("https://db.onlinewebfonts.com/t/7d721bf37dadb8ade50e3212e312c580.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7d721bf37dadb8ade50e3212e312c580.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7d721bf37dadb8ade50e3212e312c580.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7d721bf37dadb8ade50e3212e312c580.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7d721bf37dadb8ade50e3212e312c580.svg#Revolution Gothic W03 Bold")format("svg");
+}
+
+* {
+    font-family: "Revolution Gothic W03 Light";
+    font-weight: 300;
+}
+
+h1 {
+    font-family: "Revolution Gothic W03 Bold";
+    font-size: 5em;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: row-reverse;
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-
 .about {
-    background-color: rebeccapurple;
+    background-color: rgba(165, 164, 165, 0.9);
     height: 100vh;
     flex: 2;    
     display: flex;
@@ -16,6 +49,13 @@ body {
     align-items: center;
     justify-content: space-between;
     
+}
+
+.me {
+    position: fixed;
+    align-self: flex-start;
+    width: auto;
+    height: 75%;
 }
 
 button {
@@ -26,9 +66,17 @@ button {
     margin-right: 30px;
 }
 
-.bg-img {
-    flex: 1;
-    object-fit: cover;
-    height: 100vh;
-    object-position: 10% 50%;
+.btn {
+    width: 10vw;
+    height: 8vh;
+    border: 5px solid white;
+    font-size: 15px;
+    font-weight: normal;
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    transition: 0.3s;
 }
