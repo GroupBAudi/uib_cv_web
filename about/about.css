@@ -34,21 +34,22 @@
 :root {
     --rightw: 20vw;
     --gray-bg: #a5a4a5;
-    --transparent: rgba(0, 0, 0,0 )
+    --transparent: rgba(0, 0, 0,0 );
+    --scroll-bar: #635d5b;
+    --separator: #71706e;
 }
 
 *::-webkit-scrollbar {
-    width: 6px;
+    width: 3px;
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--transparent);        /* color of the tracking area */
+    background: var(--transparent);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: blue;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-  }
+    background-color: var(--scroll-bar);  
+}
 
 body {  
     display: flex;
@@ -58,18 +59,21 @@ body {
     background-color: darkgreen;
     height: 100vh;
     align-items: center;   
-    padding: 0 2rem 0; 
+    padding: 2rem 4rem 2rem; 
 }
 
 .separator {
-    border-color: #727171;
+    border: 1px solid var(--separator);
+    background-color: var(--separator);
     width: 100%; 
+    margin-bottom: 0.5rem;
 }
 
 .left {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    align-items: center;
     height: 90vh;
     background-color: var(--gray-bg) ;
 }
@@ -99,7 +103,6 @@ body {
 }
 
 .left .list {
-    list-style-type: disc;
     padding-top: 1rem;
     padding-left: 1.5rem;
     display: flex;
@@ -114,6 +117,7 @@ body {
 
 .img-placeholder {
     background-color: aquamarine;
+    margin: 0.5rem;
     height: 25vh;
 }
 
@@ -124,6 +128,7 @@ body {
     flex-flow: column wrap;
     gap: 0.5rem;
     padding: 0.5rem;
+    align-content: center;
 }
 
 .header {
