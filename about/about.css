@@ -9,7 +9,6 @@
 
 :root {
     --rightw: 20vw;
-    --section-padding: 0 1.5rem;
 }
 
 *::-webkit-scrollbar {
@@ -33,33 +32,36 @@ body {
     justify-content: space-evenly;
     background-color: darkgreen;
     height: 100vh;
-    align-items: center;
-    padding: 0.5rem;
+    align-items: center;    
 }
 
 .left {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
-    height: 100vh;
-    gap: 1rem;
+    justify-content: space-between;
+    height: 90vh;
+    background-color: palevioletred;
 }
 
 .left > div {
     width: 20vw;
 }
 
+.left li {
+    list-style-type: decimal;
+}
+
 .right {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;  
-    height: 100vh;
+    justify-content: space-between;  
+    height: 90vh;
+    background-color: magenta;
 }
 
 .right > div  {
     width: 70vw;
     height: 25vh;
-    padding: 0.4rem;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -90,8 +92,8 @@ body {
     display: flex;
     align-items: center;    
     flex-flow: column wrap;
-    padding: var(--section-padding);
     gap: 0.5rem;
+    padding: 0.5rem;
 }
 
 
@@ -107,29 +109,27 @@ body {
 
 .scroll {
     height: 30vh;
-    background-color: blueviolet;
     overflow: auto;
     overflow-x: hidden;
 }
 
 .profile-section {
-    padding: var(--section-padding);
     background-color: blue
 }
 
 .educations-section {
     background-color: burlywood;
-    padding: var(--section-padding)
 }
 
 .experiences-section {
     background-color: chartreuse;
-    padding: var(--section-padding)
 }
 
 .return-button {
+    width: 9vw;
     height: 5vh;
     border-radius: 10px;
     font-size: 15px;
     font-weight: normal;
+    align-self: flex-end;
 }
