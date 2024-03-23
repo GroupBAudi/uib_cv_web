@@ -35,7 +35,6 @@
     --rightw: 20vw;
     --gray-bg-tp: rgba(165, 164, 165, 0.85);
     --bg-blur: blur(10px);
-    --transparent: rgba(0, 0, 0,0 );
     --scroll-bar: #635d5b;
     --separator: #71706e;
 }
@@ -45,7 +44,7 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--transparent);
+    background: rgba(0, 0, 0, 0);
 }
 
 *::-webkit-scrollbar-thumb {
