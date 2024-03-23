@@ -66,8 +66,7 @@ body {
     position: fixed;
     object-fit: cover;
     z-index: -1; /* makes the video go behind all of the content and shit */
-    min-width: 100%;
-    min-height: 100%;
+    height: auto;
 }
 
 .separator {
