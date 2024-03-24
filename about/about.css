@@ -32,7 +32,7 @@
 }
 
 :root {
-    --rightw: 20vw;
+    --height: 80vh;
     --gray-bg-tp: rgba(165, 164, 165, 0.85);
     --bg-blur: blur(10px);
     --scroll-bar: #635d5b;
@@ -59,13 +59,21 @@ body {
     height: 100vh;
     align-items: center;   
     padding: 2rem 4rem 2rem; 
+    box-sizing: border-box;
+    background-image: url(../bg.jpg);
+    background-attachment: fixed;
+    background-size: cover; 
+    width: 100%;
+    position: fixed;
 }
 
 .bg-vid {
     position: fixed;
-    object-fit: cover;
     z-index: -1; /* makes the video go behind all of the content and shit */
+    min-width: 100%;
     height: auto;
+    background-size: auto;
+    width: 100%;
 }
 
 .separator {
@@ -80,7 +88,7 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: var(--height);
     background-color: var(--gray-bg-tp);
     backdrop-filter: var(--bg-blur);
 }
@@ -97,7 +105,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;  
-    height: 90vh;
+    height: var(--height);
     background-color: var(--gray-bg-tp);
     backdrop-filter: var(--bg-blur);
 }
@@ -148,10 +156,14 @@ body {
 }
 
 .scroll {
-    height: 30vh;
+    height: 10vh;
     overflow: auto;
     overflow-x: hidden;
     padding-top: 0.5rem; 
+}
+
+.left .scroll {
+    height: 30vh;
 }
 
 .return-button {
